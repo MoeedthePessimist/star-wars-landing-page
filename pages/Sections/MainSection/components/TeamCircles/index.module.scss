@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.teamImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teamCircleTitle {
+  text-align: center;
+  white-space: nowrap;
+  font-size: 2em;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.container:hover {
+  transform: scale(1.1);
+}

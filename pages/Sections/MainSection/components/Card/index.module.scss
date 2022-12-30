@@ -1,0 +1,31 @@
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: flex-start;
+//   gap: 1rem;
+// }
+
+.image {
+  // width: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.imageContainer::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: yellow;
+  transition: width 0.3s ease-in-out 0.2s;
+}
+
+.imageContainer:hover::after {
+  width: 100%;
+}
